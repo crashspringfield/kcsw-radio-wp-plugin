@@ -1,0 +1,27 @@
+{
+  "name": "kcsw-feed-player-widget",
+  "version": "0.2.0",
+  "description": "a wordpress radio plugin to play from rss feeds",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "gulp css",
+    "build:js": "gulp js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crashspringfield/kcsw-radio-wp-plugin.git"
+  },
+  "author": "crash springfield",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/crashspringfield/kcsw-radio-wp-plugin/issues"
+  },
+  "homepage": "https://github.com/crashspringfield/kcsw-radio-wp-plugin#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0"
+  }
+}

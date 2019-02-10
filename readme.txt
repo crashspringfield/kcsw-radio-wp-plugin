@@ -3,8 +3,8 @@ Authors: crash springfield
 Tags: feeds, podcasts
 Requires at least:
 Tested up to: 5.0.3
-Requires PHP: 5.4
-Stable tag: 0.1.0
+Requires PHP: 7.2
+Stable tag: 0.2.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,6 +31,9 @@ This pulls from the feeds you've added via RSS Aggregator. The widget then allow
 == Screenshots ==
 
 == Changelog ==
+
+= 0.1.0 =
+Create gulpfile to minify CSS and JS. Use minified versions in plugin.
 
 = 0.1.0 =
 Beta AF

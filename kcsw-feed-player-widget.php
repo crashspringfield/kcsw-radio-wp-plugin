@@ -189,8 +189,8 @@ add_action('widgets_init', function() {
 
 // Add JS && CSS
 add_action('wp_enqueue_scripts', function() {
-  wp_enqueue_script('kcsw_radio.js', plugins_url( '/js/kcsw_radio.js', __FILE__ ));
-  wp_enqueue_style('kcsw_radio.css', plugins_url('/css/kcsw_radio.css', __FILE__));
+  wp_enqueue_script('bundle-min.js', plugins_url( '/dist/bundle-min.js', __FILE__ ));
+  wp_enqueue_style('stylesheet.css', plugins_url('/dist/stylesheet.css', __FILE__));
 });
 
 ?>
