@@ -3,9 +3,9 @@
  * Plugin Name: KSCW Feed Player
  * Plugin URI: xx
  * Description: Plays traxx from different feeds
- * Version: 0.1.0
+ * Version: 0.2.2
  * Author: crash springfield
- * Author URI: https://github.com/crashspringfield
+ * Author URI: https://github.com/crashspringfield/kcsw-radio-wp-plugin
  */
 
 defined('ABSPATH') or die('Hack the planet, lolz');
@@ -47,10 +47,20 @@ class KCSW_Podcast_Feed_Player extends WP_Widget {
 
       // Get and format the data
       foreach ($feed_items as $k => $item) {
-        if ($enclosure = $item->get_enclosure()) {
-          $audio = preg_replace('/\?.*/', '', $enclosure->get_link());
-          array_push($traxx, $audio);
+
+        // Some feeds may have more than one enclosure (e.g if the feed has images)
+        if ($enclosures = $item->get_enclosures()) {
+          foreach ($enclosures as $enclosure) {
+            $handler = $enclosure->get_handler();
+
+            // Get whichever enclosure is audio
+            if ($handler == 'mp3' || $handler == 'wav' || $handler == 'quicktime') {
+              $audio = preg_replace('/\?.*/', '', $enclosure->get_link());
+              break;
+            }
+          }
         }
+
         $returned = array(
           'podcast' => $f->post_title,
           'title' => $item->get_title(),
