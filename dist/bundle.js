@@ -10,6 +10,13 @@ window.addEventListener('load', () => {
    * Pure functions
    */
 
+  // parseString :: String -> String
+  const parseString = str => {
+    const parser = new DOMParser
+    const dom = parser.parseFromString(`<!doctype html><body>${str}`, 'text/html')
+    return dom.body.textContent
+  }
+
   // getSec :: Int -> Int
   const getSec = time => time % 60
 
@@ -101,7 +108,7 @@ window.addEventListener('load', () => {
     const next = getNext(track, feedz)
     const previous = getPrevious(track, feedz)
     document.getElementById('podcast-name').textContent = track.podcast
-    document.getElementById('podcast-title').textContent = track.title
+    document.getElementById('podcast-title').textContent = parseString(track.title)
     document.getElementById('podcast-date').textContent = dateString(track.date)
     document.getElementById('previous-podcast').textContent = previous.podcast
     document.getElementById('next-podcast').textContent = next.podcast

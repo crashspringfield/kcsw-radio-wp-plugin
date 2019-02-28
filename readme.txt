@@ -21,10 +21,10 @@ This pulls from the feeds you've added via RSS Aggregator. The widget then allow
 == Installation ==
 
 1. Upload the `kcsw-feed-player-widget` folder to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Select which feeds you would like to pull traxx from
-1. Identify how many traxx you'd like to pull from each feed.
-1. Click Save
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Select which feeds you would like to pull traxx from
+4. Identify how many traxx you'd like to pull from each feed.
+5. Click Save
 
 == Frequently Asked Questions ==
 
@@ -32,7 +32,7 @@ This pulls from the feeds you've added via RSS Aggregator. The widget then allow
 
 == Changelog ==
 
-= 0.1.0 =
+= 0.2.0 =
 Create gulpfile to minify CSS and JS. Use minified versions in plugin.
 
 = 0.1.0 =
