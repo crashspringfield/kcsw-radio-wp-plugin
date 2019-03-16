@@ -187,7 +187,8 @@ window.addEventListener('load', () => {
       removeAudio()
       updatePlayerDisplay(currentTrack)
       addAudio(currentTrack)
-      setPlaying(false)
+      setPlaying(true)
+      playAudio()
     }
   }
 

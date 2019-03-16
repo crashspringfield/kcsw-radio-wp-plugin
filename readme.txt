@@ -4,7 +4,7 @@ Tags: feeds, podcasts
 Requires at least:
 Tested up to: 5.0.3
 Requires PHP: 7.2
-Stable tag: 0.2.0
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,11 +26,22 @@ This pulls from the feeds you've added via RSS Aggregator. The widget then allow
 4. Identify how many traxx you'd like to pull from each feed.
 5. Click Save
 
+== Customization ==
+CSS and JS are minified for you in /dist. If you'd like to make changes, the unminified versions are under /css && /js respectively. Update `add_action` in `kcsw-feed-player-widget` with paths of editing files.
+
 == Frequently Asked Questions ==
 
 == Screenshots ==
 
 == Changelog ==
+= 1.0.0 =
+Release.
+
+= 0.2.2 =
+Bug fix: Account for non-audio media in feeds
+
+= 0.2.1 =
+Bug fix: Fix parsing error with non-ASCII characters
 
 = 0.2.0 =
 Create gulpfile to minify CSS and JS. Use minified versions in plugin.

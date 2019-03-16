@@ -1,6 +1,6 @@
 {
   "name": "kcsw-feed-player-widget",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "a wordpress radio plugin to play from rss feeds",
   "main": "index.js",
   "scripts": {

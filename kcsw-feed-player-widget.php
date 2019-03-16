@@ -1,9 +1,9 @@
 <?php
 /**
  * Plugin Name: KSCW Feed Player
- * Plugin URI: xx
+ * Plugin URI: https://wordpress.org/plugins/kscw-feed-player/
  * Description: Plays traxx from different feeds
- * Version: 0.2.2
+ * Version: 1.0.1
  * Author: crash springfield
  * Author URI: https://github.com/crashspringfield/kcsw-radio-wp-plugin
  */
